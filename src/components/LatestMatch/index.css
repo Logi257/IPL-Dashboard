@@ -1,0 +1,37 @@
+/* Write your CSS here */
+* {
+  font-family: 'bree serif';
+  color: #fff;
+}
+h1 {
+  font-size: 12px;
+}
+p {
+  font-size: 10px;
+}
+.competing-team-logo {
+  height: 100px;
+}
+.match-card {
+  background-color: #0f172a;
+  border-radius: 6px;
+  padding: 10px;
+}
+.details-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .match-card {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hr-line {
+    display: none;
+  }
+  .competing-team-logo {
+    margin-left: 100%;
+  }
+}

@@ -1,0 +1,37 @@
+/* Write your CSS here */
+* {
+  font-family: 'bree serif';
+  color: #fff;
+}
+h1 {
+  font-size: 12px;
+}
+p {
+  font-size: 10px;
+}
+
+.list-item-container {
+  background-color: #0f172a;
+  border-radius: 6px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  margin: 4px;
+  height: 230px;
+  border-radius: 10px;
+}
+li {
+  list-style-type: none;
+}
+.team-logo {
+  height: 60px;
+  max-height: 270px;
+  align-self: center;
+}
+.Red {
+  color: #e31a1a;
+}
+.Green {
+  color: #18ed66;
+}

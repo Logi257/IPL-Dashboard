@@ -1,0 +1,49 @@
+/* Write your CSS here */
+li {
+  list-style-type: none;
+}
+.list-item {
+  border: 1px solid #ffffff;
+  background-color: #475569;
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  margin: 4px;
+  width: 320px;
+  height: 120px;
+  border-radius: 6px;
+}
+.team-img {
+  height: 100px;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+@media screen and (max-width: 700px) {
+  .list-item {
+    max-width: 250px;
+    margin: 4px;
+    padding: 8px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .list {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  .team-name {
+    font-size: 14px;
+  }
+  .team-img {
+    height: 60px;
+  }
+}
+.team-name {
+  font-family: 'bree serif';
+  font-weight: 500;
+  font-size: 22px;
+  color: #ffffff;
+}
+.Link {
+  text-decoration: none;
+}
