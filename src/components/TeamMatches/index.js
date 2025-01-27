@@ -1,9 +1,10 @@
 // Write your code here
 import {Component} from 'react'
 import Loader from 'react-loader-spinner'
-
+import {Redirect} from 'react-router-dom'
 import './index.css'
 import LatestMatch from '../LatestMatch'
+
 import MatchCard from '../MatchCard'
 
 class TeamMatches extends Component {
@@ -56,6 +57,10 @@ class TeamMatches extends Component {
     })
   }
 
+  onNavigate = () => {
+    this.props.history.push('/')
+  }
+
   render() {
     const {teamBannerUrl, latestMatchResult, recentMatchsData} = this.state
     const {isLoading} = this.state
@@ -63,7 +68,7 @@ class TeamMatches extends Component {
       <>
         <div className="team-match-container">
           {isLoading ? (
-            <div data-testid="loader" className="loader">
+            <div testid="loader" className="loader">
               <Loader type="Oval" color="#ffffff" height={50} width={50} />{' '}
             </div>
           ) : (
@@ -75,7 +80,16 @@ class TeamMatches extends Component {
                   alt="team banner"
                 />
               </div>
-              <p className="match-type">Latest Match</p>
+              <div className="back-container">
+                <p className="match-type">Latest Match</p>
+                <button
+                  type="button"
+                  className="back-button"
+                  onClick={this.onNavigate}
+                >
+                  Back
+                </button>
+              </div>
               <div>
                 <LatestMatch matchResult={latestMatchResult} />
               </div>
